@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HRM.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90d4d9125d15c6a98718835d9f2fc6abaf113306")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb4b1aa2354b00ef47b8910030d8cf83287250f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("HRM.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HRM.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

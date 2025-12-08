@@ -15,5 +15,19 @@ namespace HRM.Application.Employee.Commands.UpdateEmployee
         public decimal Salary { get; set; }
         public bool IsActive { get; set; }
         public int DepartmentId { get; set; }
+
+        public UpdateEmployeeCommand(int id, UpdateEmployeeDto employeeDto)
+        {
+            Id = id;
+            FirstName = employeeDto.FirstName;
+            LastName = employeeDto.LastName;
+            Email = employeeDto.Email;
+            PhoneNumber = employeeDto.PhoneNumber;
+            DateOfBirth = employeeDto.DateOfBirth;
+            HireDate = employeeDto.HireDate;
+            Salary = employeeDto.Salary;
+            IsActive = employeeDto.IsActive;
+            DepartmentId = employeeDto.DepartmentId;
+        }
     }
 }

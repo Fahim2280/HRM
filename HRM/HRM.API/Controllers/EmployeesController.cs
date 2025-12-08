@@ -19,6 +19,8 @@ namespace HRM.API.Controllers
         {
             _mediator = mediator;
         }
+
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetEmployees()
         {
@@ -54,8 +56,9 @@ namespace HRM.API.Controllers
             }
         }
 
+  
         [HttpPost]
-        public async Task<ActionResult<EmployeeDto>> CreateEmployee(CreateEmployeeCommand command)
+        public async Task<ActionResult<EmployeeDto>> CreateEmployee([FromBody] CreateEmployeeDto employeeDto)
         {
             // Check if the model is valid
             if (!ModelState.IsValid)
@@ -65,7 +68,7 @@ namespace HRM.API.Controllers
 
             try
             {
-                ///var command = new CreateEmployeeCommand(employeeDto);                
+                var command = new CreateEmployeeCommand(employeeDto);
                 var employee = await _mediator.Send(command);
                 return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, employee);
             }
@@ -75,8 +78,9 @@ namespace HRM.API.Controllers
             }
         }
 
+        
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateEmployeeCommand command)
+        public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateEmployeeDto employeeDto)
         {
             // Check if the model is valid
             if (!ModelState.IsValid)
@@ -86,7 +90,7 @@ namespace HRM.API.Controllers
 
             try
             {
-                //var command = new UpdateEmployeeCommand(id, employeeDto);
+                var command = new UpdateEmployeeCommand(id, employeeDto);
                 var employee = await _mediator.Send(command);
                 return Ok(employee);
             }
@@ -99,6 +103,7 @@ namespace HRM.API.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)

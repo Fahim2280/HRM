@@ -28,8 +28,17 @@ namespace HRM.Application.Employee.Commands.UpdateEmployee
                 throw new ArgumentException($"Employee with ID {request.Id} not found.");
             }
 
-            // Map request to existingEmployee
-            _mapper.Map(request, existingEmployee);
+            // Update properties
+            existingEmployee.FirstName = request.FirstName;
+            existingEmployee.LastName = request.LastName;
+            existingEmployee.Email = request.Email;
+            existingEmployee.PhoneNumber = request.PhoneNumber;
+            existingEmployee.DateOfBirth = request.DateOfBirth;
+            existingEmployee.HireDate = request.HireDate;
+            existingEmployee.Salary = request.Salary;
+            existingEmployee.IsActive = request.IsActive;
+            existingEmployee.DepartmentId = request.DepartmentId;
+            existingEmployee.ModifiedDate = DateTime.UtcNow;
 
             var updatedEmployee = await _employeeRepository.UpdateAsync(existingEmployee);
             var employeeDto = _mapper.Map<EmployeeDto>(updatedEmployee);

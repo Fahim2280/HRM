@@ -10,5 +10,12 @@ namespace HRM.Application.Department.Commands.UpdateDepartment
         public string? Description { get; set; }
         public bool IsActive { get; set; }
 
+        public UpdateDepartmentCommand(int id, string name, string? description, bool isActive)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            IsActive = isActive;
+        }
     }
 }

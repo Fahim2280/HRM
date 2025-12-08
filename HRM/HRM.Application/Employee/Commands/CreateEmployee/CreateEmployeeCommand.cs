@@ -22,5 +22,18 @@ namespace HRM.Application.Employee.Commands.CreateEmployee
         public bool IsActive { get; set; } = true;
 
         public int DepartmentId { get; set; }
+
+        public CreateEmployeeCommand(CreateEmployeeDto employeeDto)
+        {
+            FirstName = employeeDto.FirstName;
+            LastName = employeeDto.LastName;
+            Email = employeeDto.Email;
+            PhoneNumber = employeeDto.PhoneNumber;
+            DateOfBirth = employeeDto.DateOfBirth;
+            HireDate = employeeDto.HireDate;
+            Salary = employeeDto.Salary;
+            IsActive = employeeDto.IsActive;
+            DepartmentId = employeeDto.DepartmentId;
+        }
     }
 }

@@ -5,7 +5,6 @@ using HRM.Application.Department.DTOs;
 using HRM.Application.Department.Queries.GetAllDepartments;
 using HRM.Application.Department.Queries.GetDepartmentById;
 using MediatR;
-using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HRM.API.Controllers
@@ -55,9 +54,8 @@ namespace HRM.API.Controllers
             }
         }
 
-
         [HttpPost]
-        public async Task<ActionResult<DepartmentDto>> CreateDepartment([FromBody] DepartmentDto departmentDto, CreateDepartmentCommand command)
+        public async Task<ActionResult<DepartmentDto>> CreateDepartment([FromBody] DepartmentDto departmentDto)
         {
             // Check if the model is valid
             if (!ModelState.IsValid)
@@ -66,7 +64,8 @@ namespace HRM.API.Controllers
             }
 
             try
-            {                
+            {
+                var command = new CreateDepartmentCommand(departmentDto.Name, departmentDto.Description);
                 var department = await _mediator.Send(command);
                 return CreatedAtAction(nameof(GetDepartment), new { id = department.Id }, department);
             }
@@ -75,16 +74,6 @@ namespace HRM.API.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
-
-
-        //[HttpPost]
-        //public async Task<IActionResult> CreateDepartment(CreateDepartmentCommand command)
-        //{
-        //    int id = await _mediator.Send(command);
-        //    return CreatedAtAction(nameof(GetDepartment), new { id = id }, null);
-        //}
-
-
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDepartment(int id, [FromBody] DepartmentDto departmentDto)
@@ -110,6 +99,7 @@ namespace HRM.API.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDepartment(int id)

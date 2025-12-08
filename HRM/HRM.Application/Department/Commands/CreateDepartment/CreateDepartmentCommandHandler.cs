@@ -22,8 +22,15 @@ namespace HRM.Application.Department.Commands.CreateDepartment
 
         public async Task<DepartmentDto> Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
         {
-            var departmentEntity = _mapper.Map<DepartmentEntity>(request);
-            var createdDepartment = await _departmentRepository.AddAsync(departmentEntity);
+            var department = new DepartmentEntity
+            {
+                Name = request.Name,
+                Description = request.Description,
+                IsActive = request.IsActive,
+                CreatedDate = DateTime.UtcNow
+            };
+
+            var createdDepartment = await _departmentRepository.AddAsync(department);
             var departmentDto = _mapper.Map<DepartmentDto>(createdDepartment);
 
             return departmentDto;
