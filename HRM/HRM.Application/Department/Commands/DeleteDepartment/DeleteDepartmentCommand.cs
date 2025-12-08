@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MediatR;
 
 namespace HRM.Application.Department.Commands.DeleteDepartment
 {
-    internal class DeleteDepartmentCommand
+    public class DeleteDepartmentCommand : IRequest<bool>
     {
+        public int Id { get; set; }
+
+        public DeleteDepartmentCommand(int id)
+        {
+            Id = id;
+        }
     }
 }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JdiOLv2ZxUU=",
+  "dgSpecHash": "HuCUlkSKBnQ=",
   "success": true,
   "projectFilePath": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\HRM.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kfahi\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\kfahi\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\kfahi\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.0\\microsoft.entityframeworkcore.10.0.0.nupkg.sha512",
     "C:\\Users\\kfahi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.0\\microsoft.entityframeworkcore.abstractions.10.0.0.nupkg.sha512",
     "C:\\Users\\kfahi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.0\\microsoft.entityframeworkcore.analyzers.10.0.0.nupkg.sha512",

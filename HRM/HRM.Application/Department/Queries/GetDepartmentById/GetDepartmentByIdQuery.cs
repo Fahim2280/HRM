@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using HRM.Application.Department.DTOs;
+using MediatR;
 
 namespace HRM.Application.Department.Queries.GetDepartmentById
 {
-    internal class GetDepartmentByIdQuery
+    public class GetDepartmentByIdQuery : IRequest<DepartmentDto?>
     {
+        public int Id { get; set; }
+
+        public GetDepartmentByIdQuery(int id)
+        {
+            Id = id;
+        }
     }
 }

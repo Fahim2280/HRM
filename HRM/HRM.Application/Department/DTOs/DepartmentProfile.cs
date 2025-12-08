@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using HRM.Application.Department.Commands.CreateDepartment;
 using HRM.Domain.Entities;
 using DepartmentEntity = HRM.Domain.Entities.Department;
 
@@ -11,9 +9,7 @@ namespace HRM.Application.Department.DTOs
     {
         public DepartmentProfile()
         {
-            CreateMap<CreatedDepartmentCommand, DepartmentEntity>();
-            CreateMap<DepartmentEntity, DepartmentDto>();
-            
+            CreateMap<CreateDepartmentCommand, DepartmentEntity>();          
         }
     }
 }

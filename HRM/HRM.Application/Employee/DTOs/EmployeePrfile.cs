@@ -12,9 +12,7 @@ namespace HRM.Application.Employee.DTOs
         {
             CreateMap<EmployeeEntity, EmployeeDto>()
             .ForMember(dest => dest.DepartmentName,
-                opt => opt.MapFrom(src => src.Department.Name));
-            CreateMap<CreateEmployeeDto, EmployeeEntity>();
-            CreateMap<UpdateEmployeeDto, EmployeeEntity>();
+                opt => opt.MapFrom(src => src.Department.Name));         
         }
     }
 }

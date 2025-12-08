@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "HRM.API.Controllers.DepartmentsController",
-    "Method": "GetDepartments",
+    "Method": "GetAllDepartments",
     "RelativePath": "api/Departments",
     "HttpMethod": "GET",
     "IsController": true,
@@ -28,26 +28,16 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "departmentDto",
-        "Type": "HRM.Application.Department.DTOs.CreateDepartmentDto",
+        "Name": "command",
+        "Type": "HRM.Application.Department.Commands.CreateDepartment.CreateDepartmentCommand",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HRM.Application.Department.DTOs.DepartmentDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "HRM.API.Controllers.DepartmentsController",
-    "Method": "GetDepartment",
+    "Method": "GetDepartmentById",
     "RelativePath": "api/Departments/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -85,8 +75,8 @@
         "IsRequired": true
       },
       {
-        "Name": "departmentDto",
-        "Type": "HRM.Application.Department.DTOs.UpdateDepartmentDto",
+        "Name": "command",
+        "Type": "HRM.Application.Department.Commands.UpdateDepartment.UpdateDepartmentCommand",
         "IsRequired": true
       }
     ],
@@ -137,8 +127,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "employeeDto",
-        "Type": "HRM.Application.Employee.DTOs.CreateEmployeeDto",
+        "Name": "command",
+        "Type": "HRM.Application.Employee.Commands.CreateEmployee.CreateEmployeeCommand",
         "IsRequired": true
       }
     ],
@@ -194,8 +184,8 @@
         "IsRequired": true
       },
       {
-        "Name": "employeeDto",
-        "Type": "HRM.Application.Employee.DTOs.UpdateEmployeeDto",
+        "Name": "command",
+        "Type": "HRM.Application.Employee.Commands.UpdateEmployee.UpdateEmployeeCommand",
         "IsRequired": true
       }
     ],

@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using HRM.Application.Department.DTOs;
+using MediatR;
 
 namespace HRM.Application.Department.Commands.UpdateDepartment
 {
-    internal class UpdateDepartmentCommand
-    {
+    public class UpdateDepartmentCommand : IRequest<DepartmentDto>
+    {    
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string? Description { get; set; }
+        public bool IsActive { get; set; }
+
     }
 }

@@ -15,3 +15,4 @@ D:\GitHub\HRM\HRM\HRM.Infrastructure\bin\Debug\net10.0\HRM.Domain.pdb
 D:\GitHub\HRM\HRM\HRM.Infrastructure\obj\Debug\net10.0\HRM.Infrastructure.csproj.AssemblyReference.cache
 D:\GitHub\HRM\HRM\HRM.Infrastructure\obj\Debug\net10.0\HRM.Infr.94868923.Up2Date
 D:\GitHub\HRM\HRM\HRM.Infrastructure\obj\Debug\net10.0\HRM.Infrastructure.genruntimeconfig.cache
+D:\GitHub\HRM\HRM\HRM.Infrastructure\obj\Debug\net10.0\HRM.Infrastructure.sourcelink.json
