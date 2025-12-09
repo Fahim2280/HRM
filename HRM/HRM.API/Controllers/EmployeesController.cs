@@ -56,7 +56,7 @@ namespace HRM.API.Controllers
             }
         }
 
-  
+
         [HttpPost]
         public async Task<ActionResult<EmployeeDto>> CreateEmployee([FromBody] CreateEmployeeDto employeeDto)
         {
@@ -78,7 +78,7 @@ namespace HRM.API.Controllers
             }
         }
 
-        
+
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateEmployeeDto employeeDto)
         {

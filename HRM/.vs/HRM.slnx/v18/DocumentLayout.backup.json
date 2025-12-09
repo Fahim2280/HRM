@@ -3,8 +3,184 @@
   "WorkspaceRootPath": "D:\\GitHub\\HRM\\HRM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\auth\\security\\authorizerolesattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\auth\\security\\authorizerolesattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\interfaces\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\interfaces\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\queries\\getalldepartments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\queries\\getalldepartments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\middleware\\authorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\middleware\\authorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\migrations\\20251209174445_user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\migrations\\20251209174445_user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\migrations\\20251209174445_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\migrations\\20251209174445_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\updateuser\\updateusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\updateuser\\updateusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\updateuser\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\updateuser\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\updateuser\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\updateuser\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\queries\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\queries\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\queries\\getuserbyid\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\queries\\getuserbyid\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\queries\\getalluser\\getallusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\queries\\getalluser\\getallusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\queries\\getalluser\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\queries\\getalluser\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\deleteuser\\deleteuserfordepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\deleteuser\\deleteuserfordepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\deleteuser\\deleteuserfordepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\deleteuser\\deleteuserfordepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\createuser\\createusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\createuser\\createusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\createuser\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\createuser\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\commands\\createuser\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\commands\\createuser\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\dtos\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\dtos\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\user\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\user\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\auth\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\auth\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\auth\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\auth\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\exceptions\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\exceptions\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\createdepartment\\createdepartmentcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,28 +195,20 @@
       "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\createdepartment\\createdepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\employee\\dtos\\employeeprfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\employee\\dtos\\employeeprfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\exceptions\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\exceptions\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\dtos\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\dtos\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\employee\\dtos\\employeeprfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\employee\\dtos\\employeeprfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\employee\\commands\\createemployee\\createemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,20 +239,12 @@
       "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\employee\\commands\\updateemployee\\updateemployeecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\employee\\commands\\updateemployee\\updateemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\employee\\commands\\updateemployee\\updateemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\employee\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\employee\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\employee\\commands\\createemployee\\createemployeecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,64 +279,12 @@
       "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\queries\\getalldepartments\\getalldepartmentsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\queries\\getalldepartments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\queries\\getalldepartments\\getalldepartmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\dtos\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\dtos\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\deletedepartment\\deletedepartmentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\department\\commands\\updatedepartment\\updatedepartmentcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|d:\\github\\hrm\\hrm\\hrm.application\\hrm.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0B83014E-0803-7BC3-53DC-D543FAF2D002}|HRM.Application\\HRM.Application.csproj|solutionrelative:hrm.application\\hrm.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|solutionrelative:hrm.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|d:\\github\\hrm\\hrm\\hrm.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{007880AC-99F0-8BE6-25A2-89E4E16D5181}|HRM.API\\HRM.API.csproj|solutionrelative:hrm.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|d:\\github\\hrm\\hrm\\hrm.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{846A6E20-5CBA-98B5-A76D-EBF6E2E86B2E}|HRM.Domain\\HRM.Domain.csproj|solutionrelative:hrm.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C4F00EE-EEDE-B91D-A1DE-5910D2856835}|HRM.Infrastructure\\HRM.Infrastructure.csproj|d:\\github\\hrm\\hrm\\hrm.infrastructure\\migrations\\20251204090130_int.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -190,8 +298,268 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Interfaces\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "HRM.Domain\\Interfaces\\IAuthRepository.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Interfaces\\IAuthRepository.cs",
+              "RelativeToolTip": "HRM.Domain\\Interfaces\\IAuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:50:33.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Repositories\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "HRM.Infrastructure\\Repositories\\AuthRepository.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Repositories\\AuthRepository.cs",
+              "RelativeToolTip": "HRM.Infrastructure\\Repositories\\AuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:49:22.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20251209174445_user.Designer.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Migrations\\20251209174445_user.Designer.cs",
+              "RelativeDocumentMoniker": "HRM.Infrastructure\\Migrations\\20251209174445_user.Designer.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Migrations\\20251209174445_user.Designer.cs",
+              "RelativeToolTip": "HRM.Infrastructure\\Migrations\\20251209174445_user.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIAwwA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:47:10.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "HRM.API\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "HRM.API\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:40:44.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UpdateUserCommandValidator.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:39:03.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateUserCommandHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandHandler.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandHandler.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:38:45.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateUserCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommand.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommand.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommand.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\UpdateUser\\UpdateUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:38:12.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetUserByIdQueryHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:36:54.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetUserByIdQuery.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQuery.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQuery.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQuery.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Queries\\GetUserById\\GetUserByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:36:08.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetAllUsersQuery.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQuery.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQuery.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQuery.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:35:57.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetAllUsersQueryHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQueryHandler.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQueryHandler.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQueryHandler.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Queries\\GetAllUser\\GetAllUsersQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:35:23.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeleteUserForDepartmentCommandHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommandHandler.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommandHandler.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommandHandler.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:34:04.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DeleteUserForDepartmentCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommand.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommand.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommand.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\DeleteUser\\DeleteUserForDepartmentCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:33:55.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateUserCommandValidator.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandValidator.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandValidator.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandValidator.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:33:39.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CreateUserCommandHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandHandler.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandHandler.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:33:27.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateUserCommand.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommand.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommand.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommand.cs",
+              "RelativeToolTip": "HRM.Application\\User\\Commands\\CreateUser\\CreateUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:33:17.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\DTOs\\UserProfile.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\DTOs\\UserProfile.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\DTOs\\UserProfile.cs",
+              "RelativeToolTip": "HRM.Application\\User\\DTOs\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:32:41.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserDTOs.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\DTOs\\UserDTOs.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\User\\DTOs\\UserDTOs.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\User\\DTOs\\UserDTOs.cs",
+              "RelativeToolTip": "HRM.Application\\User\\DTOs\\UserDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:31:54.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Auth\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\Auth\\DTOs\\LoginDto.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Auth\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "HRM.Application\\Auth\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:27:05.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Auth\\DTOs\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\Auth\\DTOs\\AuthResponseDto.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Auth\\DTOs\\AuthResponseDto.cs",
+              "RelativeToolTip": "HRM.Application\\Auth\\DTOs\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:25:53.437Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -209,12 +577,99 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "HRM.Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "HRM.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:11:54.631Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "AuthorizationMiddleware.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Middleware\\AuthorizationMiddleware.cs",
+              "RelativeDocumentMoniker": "HRM.API\\Middleware\\AuthorizationMiddleware.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Middleware\\AuthorizationMiddleware.cs",
+              "RelativeToolTip": "HRM.API\\Middleware\\AuthorizationMiddleware.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIA7wBIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:10:02.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthorizeRolesAttribute.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Auth\\Security\\AuthorizeRolesAttribute.cs",
+              "RelativeDocumentMoniker": "HRM.Application\\Auth\\Security\\AuthorizeRolesAttribute.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Auth\\Security\\AuthorizeRolesAttribute.cs",
+              "RelativeToolTip": "HRM.Application\\Auth\\Security\\AuthorizeRolesAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T19:09:23.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "HRM.API\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "HRM.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:53:32.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "HRM.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "HRM.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:45:36.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20251209174445_user.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Migrations\\20251209174445_user.cs",
+              "RelativeDocumentMoniker": "HRM.Infrastructure\\Migrations\\20251209174445_user.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Migrations\\20251209174445_user.cs",
+              "RelativeToolTip": "HRM.Infrastructure\\Migrations\\20251209174445_user.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:44:46.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "HRM.Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "HRM.Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:23:09.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
               "Title": "GetAllEmployeesQueryHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Queries\\GetAllEmployee\\GetAllEmployeesQueryHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Queries\\GetAllEmployee\\GetAllEmployeesQueryHandler.cs",
@@ -227,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 54,
               "Title": "GetAllEmployeesQuery.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Queries\\GetAllEmployee\\GetAllEmployeesQuery.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Queries\\GetAllEmployee\\GetAllEmployeesQuery.cs",
@@ -240,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 55,
               "Title": "GetEmployeeByIdQuery.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQuery.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQuery.cs",
@@ -253,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 56,
               "Title": "GetEmployeeByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQueryHandler.cs",
@@ -266,33 +721,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 58,
               "Title": "UpdateEmployeeCommandHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
               "RelativeToolTip": "HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA3wCEAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwCEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T18:34:11.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 59,
               "Title": "UpdateEmployeeCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommand.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommand.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommand.cs",
               "RelativeToolTip": "HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommand.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T18:34:07.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 57,
               "Title": "UpdateEmployeeCommandValidator.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommandValidator.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\UpdateEmployee\\UpdateEmployeeCommandValidator.cs",
@@ -305,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 63,
               "Title": "DeleteEmployeeCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\DeleteEmployee\\DeleteEmployeeCommand.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\DeleteEmployee\\DeleteEmployeeCommand.cs",
@@ -318,20 +773,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 62,
               "Title": "DeleteEmployeeCommandHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
               "RelativeToolTip": "HRM.Application\\Employee\\Commands\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T18:25:18.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 39,
               "Title": "ErrorResponse.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Exceptions\\ErrorResponse.cs",
               "RelativeDocumentMoniker": "HRM.Domain\\Exceptions\\ErrorResponse.cs",
@@ -344,20 +799,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 48,
               "Title": "ExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Middleware\\ExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "HRM.API\\Middleware\\ExceptionHandlingMiddleware.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Middleware\\ExceptionHandlingMiddleware.cs",
               "RelativeToolTip": "HRM.API\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwBwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T14:13:40.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 61,
               "Title": "CreateEmployeeCommandValidator.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\CreateEmployee\\CreateEmployeeCommandValidator.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\CreateEmployee\\CreateEmployeeCommandValidator.cs",
@@ -370,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 64,
               "Title": "CreateEmployeeCommandHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
@@ -383,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 52,
               "Title": "CreateEmployeeCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\Commands\\CreateEmployee\\CreateEmployeeCommand.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\Commands\\CreateEmployee\\CreateEmployeeCommand.cs",
@@ -396,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 66,
               "Title": "GetDepartmentByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Queries\\GetDepartmentById\\GetDepartmentByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Queries\\GetDepartmentById\\GetDepartmentByIdQueryHandler.cs",
@@ -409,7 +864,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 67,
               "Title": "GetDepartmentByIdQuery.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Queries\\GetDepartmentById\\GetDepartmentByIdQuery.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Queries\\GetDepartmentById\\GetDepartmentByIdQuery.cs",
@@ -422,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 68,
               "Title": "GetAllDepartmentsQueryHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Queries\\GetAllDepartments\\GetAllDepartmentsQueryHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Queries\\GetAllDepartments\\GetAllDepartmentsQueryHandler.cs",
@@ -435,20 +890,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 9,
               "Title": "GetAllDepartmentsQuery.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Queries\\GetAllDepartments\\GetAllDepartmentsQuery.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Queries\\GetAllDepartments\\GetAllDepartmentsQuery.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Queries\\GetAllDepartments\\GetAllDepartmentsQuery.cs",
               "RelativeToolTip": "HRM.Application\\Department\\Queries\\GetAllDepartments\\GetAllDepartmentsQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T13:41:42.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 69,
               "Title": "UpdateDepartmentCommandValidator.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommandValidator.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommandValidator.cs",
@@ -461,20 +916,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 41,
               "Title": "UpdateDepartmentCommandHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommandHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommandHandler.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommandHandler.cs",
               "RelativeToolTip": "HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommandHandler.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwAsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T13:38:51.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 42,
               "Title": "UpdateDepartmentCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommand.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\UpdateDepartment\\UpdateDepartmentCommand.cs",
@@ -487,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 44,
               "Title": "DeleteDepartmentCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\DeleteDepartment\\DeleteDepartmentCommand.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\DeleteDepartment\\DeleteDepartmentCommand.cs",
@@ -500,33 +955,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 43,
               "Title": "DeleteDepartmentCommandHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\DeleteDepartment\\DeleteDepartmentCommandHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\DeleteDepartment\\DeleteDepartmentCommandHandler.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\DeleteDepartment\\DeleteDepartmentCommandHandler.cs",
               "RelativeToolTip": "HRM.Application\\Department\\Commands\\DeleteDepartment\\DeleteDepartmentCommandHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T13:29:31.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 45,
               "Title": "CreateDepartmentCommandValidator.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandValidator.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandValidator.cs",
-              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandValidator.cs*",
-              "RelativeToolTip": "HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandValidator.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABpAAAAAAAAAA==",
+              "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandValidator.cs",
+              "RelativeToolTip": "HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T13:25:02.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 47,
               "Title": "CreateDepartmentCommand.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommand.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommand.cs",
@@ -539,97 +994,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 46,
               "Title": "CreateDepartmentCommandHandler.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandHandler.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandHandler.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandHandler.cs",
               "RelativeToolTip": "HRM.Application\\Department\\Commands\\CreateDepartment\\CreateDepartmentCommandHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T13:23:34.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "HRM.API\\Controllers\\EmployeesController.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "HRM.API\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAADwv34AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T14:29:12.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 49,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "HRM.API\\Controllers\\DepartmentsController.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Controllers\\DepartmentsController.cs",
               "RelativeToolTip": "HRM.API\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwGoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T14:28:47.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 6,
               "Title": "IDepartmentRepository.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Interfaces\\IDepartmentRepository.cs",
               "RelativeDocumentMoniker": "HRM.Domain\\Interfaces\\IDepartmentRepository.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Interfaces\\IDepartmentRepository.cs",
               "RelativeToolTip": "HRM.Domain\\Interfaces\\IDepartmentRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T14:07:08.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 70,
               "Title": "HRM.Application.csproj",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\HRM.Application.csproj",
               "RelativeDocumentMoniker": "HRM.Application\\HRM.Application.csproj",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\HRM.Application.csproj",
               "RelativeToolTip": "HRM.Application\\HRM.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-12-04T11:57:07.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 1,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeToolTip": "HRM.Application\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T11:38:35.391Z"
+              "WhenOpened": "2025-12-04T11:38:35.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 7,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Repositories\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "HRM.Infrastructure\\Repositories\\DepartmentRepository.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Repositories\\DepartmentRepository.cs",
               "RelativeToolTip": "HRM.Infrastructure\\Repositories\\DepartmentRepository.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwE4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T10:24:21.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 8,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "HRM.Infrastructure\\Repositories\\EmployeeRepository.cs",
@@ -637,7 +1093,8 @@
               "RelativeToolTip": "HRM.Infrastructure\\Repositories\\EmployeeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:23:35.043Z"
+              "WhenOpened": "2025-12-04T10:23:35.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -649,11 +1106,12 @@
               "RelativeToolTip": "HRM.Domain\\Interfaces\\IEmployeeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:22:31.447Z"
+              "WhenOpened": "2025-12-04T10:22:31.447Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 71,
               "Title": "20251204090130_int.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Migrations\\20251204090130_int.cs",
               "RelativeDocumentMoniker": "HRM.Infrastructure\\Migrations\\20251204090130_int.cs",
@@ -661,113 +1119,116 @@
               "RelativeToolTip": "HRM.Infrastructure\\Migrations\\20251204090130_int.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:01:31.058Z"
+              "WhenOpened": "2025-12-04T09:01:31.058Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "HRM.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeToolTip": "HRM.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIA9wBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T08:43:55.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Program.cs",
               "RelativeDocumentMoniker": "HRM.API\\Program.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\Program.cs",
               "RelativeToolTip": "HRM.API\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAACsAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T08:42:08.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.API\\appsettings.json",
               "RelativeDocumentMoniker": "HRM.API\\appsettings.json",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.API\\appsettings.json",
               "RelativeToolTip": "HRM.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-04T08:41:23.301Z"
+              "WhenOpened": "2025-12-04T08:41:23.301Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 38,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Persistence\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "HRM.Infrastructure\\Persistence\\ApplicationDbContext.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Infrastructure\\Persistence\\ApplicationDbContext.cs",
               "RelativeToolTip": "HRM.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAIBJwBoAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwCoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T07:46:00.4Z"
+              "WhenOpened": "2025-12-04T07:46:00.4Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 51,
               "Title": "EmployeePrfile.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\DTOs\\EmployeePrfile.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\DTOs\\EmployeePrfile.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\DTOs\\EmployeePrfile.cs",
               "RelativeToolTip": "HRM.Application\\Employee\\DTOs\\EmployeePrfile.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAIAwwA4AAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAIAwwA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T03:00:31.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 50,
               "Title": "DepartmentProfile.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\DTOs\\DepartmentProfile.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\DTOs\\DepartmentProfile.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\DTOs\\DepartmentProfile.cs",
               "RelativeToolTip": "HRM.Application\\Department\\DTOs\\DepartmentProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T02:21:00.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 60,
               "Title": "EmployeeDto.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\DTOs\\EmployeeDto.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Employee\\DTOs\\EmployeeDto.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Employee\\DTOs\\EmployeeDto.cs",
               "RelativeToolTip": "HRM.Application\\Employee\\DTOs\\EmployeeDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T01:46:16.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 65,
               "Title": "DepartmentDto.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\DTOs\\DepartmentDto.cs",
               "RelativeDocumentMoniker": "HRM.Application\\Department\\DTOs\\DepartmentDto.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Application\\Department\\DTOs\\DepartmentDto.cs",
               "RelativeToolTip": "HRM.Application\\Department\\DTOs\\DepartmentDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T01:42:56.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 16,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "HRM.Domain\\Entities\\Employee.cs",
@@ -775,20 +1236,25 @@
               "RelativeToolTip": "HRM.Domain\\Entities\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T01:27:51.153Z"
+              "WhenOpened": "2025-12-04T01:27:51.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 15,
               "Title": "Department.cs",
               "DocumentMoniker": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Entities\\Department.cs",
               "RelativeDocumentMoniker": "HRM.Domain\\Entities\\Department.cs",
               "ToolTip": "D:\\GitHub\\HRM\\HRM\\HRM.Domain\\Entities\\Department.cs",
               "RelativeToolTip": "HRM.Domain\\Entities\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T01:27:35.884Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             }
           ]
         }

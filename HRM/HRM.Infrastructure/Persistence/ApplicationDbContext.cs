@@ -14,12 +14,22 @@ namespace HRM.Infrastructure.Persistence
         {
         }
 
+        public DbSet<User> Users { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            // User configuration
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Username).IsRequired().HasMaxLength(50);
+                entity.Property(e => e.PasswordHash).IsRequired().HasMaxLength(200);
+                entity.HasIndex(e => e.Username).IsUnique();
+            });
 
             // Department configuration
             modelBuilder.Entity<Department>(entity =>

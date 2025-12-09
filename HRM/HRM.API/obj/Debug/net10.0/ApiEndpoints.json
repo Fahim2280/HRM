@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "HRM.API.Controllers.DepartmentsController",
-    "Method": "GetAllDepartments",
+    "Method": "GetDepartments",
     "RelativePath": "api/Departments",
     "HttpMethod": "GET",
     "IsController": true,
@@ -28,16 +28,26 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "HRM.Application.Department.Commands.CreateDepartment.CreateDepartmentCommand",
+        "Name": "departmentDto",
+        "Type": "HRM.Application.Department.DTOs.DepartmentDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "HRM.Application.Department.DTOs.DepartmentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "HRM.API.Controllers.DepartmentsController",
-    "Method": "GetDepartmentById",
+    "Method": "GetDepartment",
     "RelativePath": "api/Departments/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -75,8 +85,8 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
-        "Type": "HRM.Application.Department.Commands.UpdateDepartment.UpdateDepartmentCommand",
+        "Name": "departmentDto",
+        "Type": "HRM.Application.Department.DTOs.DepartmentDto",
         "IsRequired": true
       }
     ],
@@ -127,8 +137,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "HRM.Application.Employee.Commands.CreateEmployee.CreateEmployeeCommand",
+        "Name": "employeeDto",
+        "Type": "HRM.Application.Employee.DTOs.CreateEmployeeDto",
         "IsRequired": true
       }
     ],
@@ -184,8 +194,8 @@
         "IsRequired": true
       },
       {
-        "Name": "command",
-        "Type": "HRM.Application.Employee.Commands.UpdateEmployee.UpdateEmployeeCommand",
+        "Name": "employeeDto",
+        "Type": "HRM.Application.Employee.DTOs.UpdateEmployeeDto",
         "IsRequired": true
       }
     ],

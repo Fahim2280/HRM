@@ -1,12 +1,11 @@
 ﻿using HRM.Domain.Interfaces;
 using HRM.Infrastructure.Persistence;
 using HRM.Infrastructure.Repositories;
+using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace HRM.Infrastructure.Extensions
 {
@@ -21,7 +20,8 @@ namespace HRM.Infrastructure.Extensions
 
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
     }
 }
