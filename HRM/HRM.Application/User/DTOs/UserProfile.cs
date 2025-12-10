@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using AutoMapper;
+using UserEntity = HRM.Domain.Entities.User;
 
 namespace HRM.Application.User.DTOs
 {
-    internal class UserProfile
+    public class UserProfile : Profile
     {
+        public UserProfile()
+        {
+            CreateMap<UserEntity, UserDto>();
+        }
     }
 }

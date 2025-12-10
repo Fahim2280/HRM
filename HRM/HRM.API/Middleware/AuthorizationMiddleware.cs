@@ -16,7 +16,7 @@ namespace HRM.API.Middleware
         public async Task InvokeAsync(HttpContext context)
         {
             // Log user information if authenticated
-            if (context.User.Identity.IsAuthenticated)
+            if (context.User.Identity?.IsAuthenticated == true)
             {
                 var userId = context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 var username = context.User.FindFirst(ClaimTypes.Name)?.Value;

@@ -1,5 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.AspNetCore;
+using HRM.Application.Auth.Services;
+using HRM.Domain.Interfaces;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -20,6 +22,8 @@ namespace HRM.Application.Extensions
             services.AddValidatorsFromAssembly(applicationAssembly)
             .AddFluentValidationAutoValidation();
 
+            // Register Auth Service
+            services.AddScoped<IAuthService, AuthService>();
         }
     }
 }

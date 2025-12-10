@@ -1,3 +1,4 @@
+
 using FluentValidation;
 using HRM.Application.Extensions;
 using HRM.Infrastructure.Extensions;
@@ -5,15 +6,15 @@ using HRM.API.Middleware;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi;
+using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
-
 builder.Services.AddControllers();
 
 // Add MediatR
@@ -32,7 +33,7 @@ builder.Services.AddAuthentication(options =>
 {
     var jwtSettings = builder.Configuration.GetSection("JwtSettings");
     var secretKey = jwtSettings["SecretKey"];
-    
+
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = true,
@@ -41,19 +42,26 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         ValidIssuer = jwtSettings["Issuer"],
         ValidAudience = jwtSettings["Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+        IssuerSigningKey = !string.IsNullOrEmpty(secretKey) 
+            ? new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+            : null
     };
 });
 
 // Add Authorization
 builder.Services.AddAuthorization();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Configure Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "HRM API",
+        Version = "v1",
+        Description = "Human Resource Management API"
+    });
+});
 
 var app = builder.Build();
 
@@ -66,8 +74,6 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "HRM API v1");
         c.RoutePrefix = string.Empty; // Set Swagger UI at the app's root
     });
-    
-    app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();

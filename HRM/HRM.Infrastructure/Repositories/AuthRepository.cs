@@ -2,16 +2,20 @@
 using HRM.Domain.Interfaces;
 using HRM.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace HRM.Infrastructure.Repositories
 {
     internal class AuthRepository : IAuthRepository
     {
+        private readonly ApplicationDbContext _context;
+
+        public AuthRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        // Additional authentication-related methods can be added here if needed
     }
 }

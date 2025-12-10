@@ -1,10 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace HRM.Application.User.DTOs
 {
-    internal class UserDTOs
+    public class UserDto
     {
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Username is required")]
+        [StringLength(50, ErrorMessage = "Username must be between 1 and 50 characters", MinimumLength = 1)]
+        public string Username { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Role is required")]
+        [StringLength(50, ErrorMessage = "Role must be between 1 and 50 characters", MinimumLength = 1)]
+        public string Role { get; set; } = string.Empty;
+
+        public bool IsActive { get; set; }
+
+        public DateTime CreatedDate { get; set; }
+
+        public DateTime? ModifiedDate { get; set; }
     }
 }

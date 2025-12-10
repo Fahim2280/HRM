@@ -1,10 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using HRM.Application.User.DTOs;
+using MediatR;
 
 namespace HRM.Application.User.Queries.GetUserById
 {
-    internal class GetUserByIdQuery
+    public class GetUserByIdQuery : IRequest<UserDto>
     {
+        public int Id { get; set; }
+
+        public GetUserByIdQuery(int id)
+        {
+            Id = id;
+        }
+        
+        public GetUserByIdQuery()
+        {
+        }
     }
 }
