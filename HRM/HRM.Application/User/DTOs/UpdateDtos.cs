@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -20,6 +20,6 @@ namespace HRM.Application.User.DTOs
         [StringLength(50, ErrorMessage = "Role must be between 1 and 50 characters", MinimumLength = 1)]
         public string Role { get; set; } = string.Empty;
 
-        public bool IsActive { get; set; } = true;
+        public bool IsActive { get; set; }
     }
 }

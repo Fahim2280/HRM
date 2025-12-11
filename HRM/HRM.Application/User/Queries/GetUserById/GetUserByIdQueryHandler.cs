@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HRM.Application.User.Queries.GetUserById
 {
-    public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, UserDto>
+    public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, UserDto?>
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
@@ -18,12 +18,13 @@ namespace HRM.Application.User.Queries.GetUserById
             _mapper = mapper;
         }
 
-        public async Task<UserDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
+        public async Task<UserDto?> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
             var user = await _userRepository.GetByIdAsync(request.Id);
             if (user == null)
             {
-                throw new System.Exception($"User with ID {request.Id} not found.");
+                // Return null instead of throwing exception
+                return null;
             }
 
             var userDto = _mapper.Map<UserDto>(user);

@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HRM.API.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -23,6 +22,7 @@ namespace HRM.API.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Administrator")]
         public async Task<ActionResult<IEnumerable<UserDto>>> GetAllUsers()
         {
             var query = new GetAllUsersQuery();
@@ -35,6 +35,12 @@ namespace HRM.API.Controllers
         {
             var query = new GetUserByIdQuery(id);
             var user = await _mediator.Send(query);
+            
+            if (user == null)
+            {
+                return NotFound($"User with ID {id} not found.");
+            }
+            
             return Ok(user);
         }
 
@@ -42,16 +48,28 @@ namespace HRM.API.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<UserDto>> CreateUser([FromBody] CreateUserDto createUserDto)
         {
-            var command = new CreateUserCommand(
-                createUserDto.Username,
-                createUserDto.Password,
-                createUserDto.Role)
+            var command = new CreateUserCommand
             {
+                Username = createUserDto.Username,
+                Password = createUserDto.Password,
+                Role = createUserDto.Role,
                 IsActive = createUserDto.IsActive
             };
 
-            var user = await _mediator.Send(command);
-            return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
+            var result = await _mediator.Send(command);
+            
+            if (result.IsSuccess)
+            {
+                return CreatedAtAction(nameof(GetUserById), new { id = result.User.Id }, result.User);
+            }
+            else
+            {
+                if (result.StatusCode == 409)
+                {
+                    return Conflict(new { Message = result.ErrorMessage });
+                }
+                return BadRequest(new { Message = result.ErrorMessage });
+            }
         }
 
         [HttpPut("{id}")]
@@ -71,8 +89,24 @@ namespace HRM.API.Controllers
                 IsActive = updateUserDto.IsActive
             };
 
-            var user = await _mediator.Send(command);
-            return Ok(user);
+            var result = await _mediator.Send(command);
+            
+            if (result.IsSuccess)
+            {
+                return Ok(result.User);
+            }
+            else
+            {
+                if (result.StatusCode == 404)
+                {
+                    return NotFound(new { Message = result.ErrorMessage });
+                }
+                else if (result.StatusCode == 409)
+                {
+                    return Conflict(new { Message = result.ErrorMessage });
+                }
+                return BadRequest(new { Message = result.ErrorMessage });
+            }
         }
 
 
@@ -81,7 +115,19 @@ namespace HRM.API.Controllers
         {
             var command = new DeleteUserCommand(id);
             var result = await _mediator.Send(command);
-            return Ok(result);
+            
+            if (result.IsSuccess)
+            {
+                return Ok(true);
+            }
+            else
+            {
+                if (result.StatusCode == 404)
+                {
+                    return NotFound(new { Message = result.ErrorMessage });
+                }
+                return BadRequest(new { Message = result.ErrorMessage });
+            }
         }
     }
 }

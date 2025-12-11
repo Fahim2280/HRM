@@ -45,9 +45,15 @@ namespace HRM.API.Middleware
                     response.StatusCode = (int)HttpStatusCode.NotFound;
                     errorResponse.Message = exception.Message;
                     break;
+                case AuthenticationException authEx:
+                    // Handle authentication exceptions with proper status code and message
+                    response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                    errorResponse.Message = authEx.Message;
+                    break;
                 default:
-                    response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    errorResponse.Message = "An unexpected error occurred.";
+                    // For general exceptions, use the actual exception message
+                    response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    errorResponse.Message = exception.Message;
                     break;
             }
 

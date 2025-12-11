@@ -7,8 +7,10 @@ namespace HRM.Application.User.Commands.CreateUser
 {
     public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
     {
+        private readonly List<string> validCategories = ["Administrator","User"];
         public CreateUserCommandValidator()
         {
+
             RuleFor(x => x.Username)
             .NotEmpty().WithMessage("Username is required")
             .MaximumLength(50).WithMessage("Username must not exceed 50 characters");
@@ -19,6 +21,7 @@ namespace HRM.Application.User.Commands.CreateUser
                 .MaximumLength(100).WithMessage("Password must not exceed 100 characters");
 
             RuleFor(x => x.Role)
+                .Must(role => validCategories.Contains(role))
                 .NotEmpty().WithMessage("Role is required")
                 .MaximumLength(50).WithMessage("Role must not exceed 50 characters");
         }

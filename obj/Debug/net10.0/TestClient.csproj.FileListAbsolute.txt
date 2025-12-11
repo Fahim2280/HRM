@@ -1,5 +1,0 @@
-D:\GitHub\HRM\obj\Debug\net10.0\TestClient.GeneratedMSBuildEditorConfig.editorconfig
-D:\GitHub\HRM\obj\Debug\net10.0\TestClient.AssemblyInfoInputs.cache
-D:\GitHub\HRM\obj\Debug\net10.0\TestClient.AssemblyInfo.cs
-D:\GitHub\HRM\obj\Debug\net10.0\TestClient.csproj.CoreCompileInputs.cache
-D:\GitHub\HRM\obj\Debug\net10.0\TestClient.sourcelink.json

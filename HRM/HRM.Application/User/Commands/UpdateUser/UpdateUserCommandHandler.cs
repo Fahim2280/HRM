@@ -10,7 +10,7 @@ using BCrypt.Net;
 
 namespace HRM.Application.User.Commands.UpdateUser
 {
-    public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, UserDto>
+    public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, UserOperationResult>
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
@@ -21,12 +21,12 @@ namespace HRM.Application.User.Commands.UpdateUser
             _mapper = mapper;
         }
 
-        public async Task<UserDto> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
+        public async Task<UserOperationResult> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
         {
             var user = await _userRepository.GetByIdAsync(request.Id);
             if (user == null)
             {
-                throw new Exception($"User with ID {request.Id} not found.");
+                return UserOperationResult.Failure($"User with ID {request.Id} not found.", 404);
             }
 
             // Check if username is being changed and if the new username already exists
@@ -35,7 +35,7 @@ namespace HRM.Application.User.Commands.UpdateUser
                 var existingUser = await _userRepository.GetUserByUsernameAsync(request.Username);
                 if (existingUser != null)
                 {
-                    throw new Exception($"User with username '{request.Username}' already exists.");
+                    return UserOperationResult.Failure($"User with username '{request.Username}' already exists.", 409);
                 }
             }
 
@@ -53,7 +53,7 @@ namespace HRM.Application.User.Commands.UpdateUser
             var updatedUser = await _userRepository.UpdateAsync(user);
             var userDto = _mapper.Map<UserDto>(updatedUser);
 
-            return userDto;
+            return UserOperationResult.Success(userDto);
         }
     }
 }

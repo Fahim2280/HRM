@@ -26,9 +26,4 @@
     <ProjectReference Include="..\HRM.Domain\HRM.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Auth\Commands\LoginCommand\" />
-    <Folder Include="Auth\Commands\LogOutCommand\" />
-  </ItemGroup>
-
 </Project>

@@ -3,7 +3,7 @@ using MediatR;
 
 namespace HRM.Application.Auth.Commands.LoginCommand
 {
-    public class LoginCommand : IRequest<AuthResponseDto>
+    public class LoginCommand : IRequest<LoginResult>
     {
         public string Username { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
