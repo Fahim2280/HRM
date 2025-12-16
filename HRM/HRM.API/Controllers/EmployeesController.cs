@@ -6,11 +6,13 @@ using HRM.Application.Employee.Queries.GetAllEmployee;
 using HRM.Application.Employee.Queries.GetEmployeeById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HRM.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class EmployeesController : ControllerBase
     {
         private readonly IMediator _mediator;

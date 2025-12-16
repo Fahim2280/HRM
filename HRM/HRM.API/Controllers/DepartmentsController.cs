@@ -6,11 +6,13 @@ using HRM.Application.Department.Queries.GetAllDepartments;
 using HRM.Application.Department.Queries.GetDepartmentById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HRM.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class DepartmentsController : ControllerBase
     {
         private readonly IMediator _mediator;
