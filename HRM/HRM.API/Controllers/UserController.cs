@@ -51,6 +51,9 @@ namespace HRM.API.Controllers
             var command = new CreateUserCommand
             {
                 Username = createUserDto.Username,
+                Email = createUserDto.Email,
+                Country = createUserDto.Country,
+                PhoneNumber = createUserDto.PhoneNumber,            
                 Password = createUserDto.Password,
                 Role = createUserDto.Role,
                 IsActive = createUserDto.IsActive
@@ -84,6 +87,9 @@ namespace HRM.API.Controllers
             {
                 Id = updateUserDto.Id,
                 Username = updateUserDto.Username,
+                Email = updateUserDto.Email,
+                Country = updateUserDto.Country,
+                PhoneNumber = updateUserDto.PhoneNumber,
                 Password = updateUserDto.Password,
                 Role = updateUserDto.Role,
                 IsActive = updateUserDto.IsActive

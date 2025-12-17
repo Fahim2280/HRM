@@ -21,7 +21,7 @@ namespace HRM.API.Controllers
         {
             var command = new LoginCommand
             {
-                Username = loginDto.Username,
+                Identifier = loginDto.Identifier,
                 Password = loginDto.Password
             };
 

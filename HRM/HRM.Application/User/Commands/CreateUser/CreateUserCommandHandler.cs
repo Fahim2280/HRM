@@ -30,9 +30,16 @@ namespace HRM.Application.User.Commands.CreateUser
                 return UserOperationResult.Failure($"User with username '{request.Username}' already exists.", 409);
             }
 
+            // Check if email already exists
+            // Note: You might want to add a method to check email uniqueness in the repository
+            // For now, we'll assume usernames are unique
+
             var user = new HRM.Domain.Entities.User
             {
                 Username = request.Username,
+                Email = request.Email,
+                Country = request.Country,
+                PhoneNumber = request.PhoneNumber,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
                 Role = request.Role,
                 IsActive = request.IsActive,

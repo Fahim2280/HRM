@@ -22,24 +22,37 @@ namespace HRM.Application.Auth.Commands.LoginCommand
 
         public async Task<LoginResult> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
-            // Get user by username
-            var user = await _userRepository.GetUserByUsernameAsync(request.Username);
+            // Get user by username or email
+            var user = await GetUserByIdentifierAsync(request.Identifier);
             if (user == null)
             {
-                return LoginResult.Failure("Invalid username or password.");
+                return LoginResult.Failure("Invalid identifier or password.");
             }
 
             // Verify password
             bool isValidPassword = BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash);
             if (!isValidPassword)
             {
-                return LoginResult.Failure("Invalid username or password.");
+                return LoginResult.Failure("Invalid identifier or password.");
             }
 
             // Generate JWT token
             var token = _authService.GenerateJwtToken(user);
 
             return LoginResult.Success(token, user.Username, user.Role, DateTime.UtcNow.AddHours(1));
+        }
+
+        private async Task<HRM.Domain.Entities.User?> GetUserByIdentifierAsync(string identifier)
+        {
+            // Check if identifier is an email
+            if (identifier.Contains("@"))
+            {
+                return await _userRepository.GetUserByEmailAsync(identifier);
+            }
+            else
+            {
+                return await _userRepository.GetUserByUsernameAsync(identifier);
+            }
         }
     }
 }

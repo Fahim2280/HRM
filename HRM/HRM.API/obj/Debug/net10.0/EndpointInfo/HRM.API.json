@@ -700,6 +700,7 @@
       },
       "CreateUserDto": {
         "required": [
+          "email",
           "password",
           "role",
           "username"
@@ -711,10 +712,27 @@
             "minLength": 1,
             "type": "string"
           },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
           "password": {
             "maxLength": 100,
             "minLength": 6,
             "type": "string"
+          },
+          "confirmPassword": {
+            "type": "string",
+            "nullable": true
           },
           "role": {
             "maxLength": 50,
@@ -824,7 +842,7 @@
       "LoginDto": {
         "type": "object",
         "properties": {
-          "username": {
+          "identifier": {
             "type": "string",
             "nullable": true
           },
@@ -894,6 +912,7 @@
       },
       "UpdateUserDto": {
         "required": [
+          "email",
           "role",
           "username"
         ],
@@ -907,6 +926,19 @@
             "maxLength": 50,
             "minLength": 1,
             "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
           },
           "password": {
             "maxLength": 100,
@@ -927,6 +959,7 @@
       },
       "UserDto": {
         "required": [
+          "email",
           "password",
           "role",
           "username"
@@ -941,6 +974,19 @@
             "maxLength": 50,
             "minLength": 1,
             "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
           },
           "password": {
             "maxLength": 100,

@@ -8,6 +8,7 @@ namespace HRM.Domain.Interfaces
     public interface IUserRepository
     {
         Task<User?> GetUserByUsernameAsync(string username);
+        Task<User?> GetUserByEmailAsync(string email);
         Task<User> AddAsync(User user);
         Task<User?> GetByIdAsync(int id);
         Task<IEnumerable<User>> GetAllAsync();

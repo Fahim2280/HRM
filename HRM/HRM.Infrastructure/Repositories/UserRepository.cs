@@ -25,6 +25,11 @@ namespace HRM.Infrastructure.Repositories
             return await _dbSet.FirstOrDefaultAsync(u => u.Username == username);
         }
 
+        public async Task<User?> GetUserByEmailAsync(string email)
+        {
+            return await _dbSet.FirstOrDefaultAsync(u => u.Email == email);
+        }
+
         public async Task<User> AddAsync(User user)
         {
             await _dbSet.AddAsync(user);

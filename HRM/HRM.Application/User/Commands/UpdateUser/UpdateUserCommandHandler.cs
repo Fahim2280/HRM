@@ -40,6 +40,9 @@ namespace HRM.Application.User.Commands.UpdateUser
             }
 
             user.Username = request.Username;
+            user.Email = request.Email;
+            user.Country = request.Country;
+            user.PhoneNumber = request.PhoneNumber;
             user.Role = request.Role;
             user.IsActive = request.IsActive;
             user.ModifiedDate = DateTime.UtcNow;
