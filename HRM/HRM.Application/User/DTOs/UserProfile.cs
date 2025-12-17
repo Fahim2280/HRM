@@ -7,7 +7,11 @@ namespace HRM.Application.User.DTOs
     {
         public UserProfile()
         {
-            CreateMap<UserEntity, UserDto>();
+            CreateMap<UserEntity, UserDto>()
+                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.Id));
+            
+            CreateMap<UserDto, UserEntity>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.UserId));
         }
     }
 }

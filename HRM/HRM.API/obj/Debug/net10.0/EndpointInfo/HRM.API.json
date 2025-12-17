@@ -653,6 +653,10 @@
         ],
         "type": "object",
         "properties": {
+          "employeeId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "firstName": {
             "maxLength": 50,
             "minLength": 1,
@@ -707,6 +711,10 @@
         ],
         "type": "object",
         "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "username": {
             "maxLength": 50,
             "minLength": 1,
@@ -966,7 +974,7 @@
         ],
         "type": "object",
         "properties": {
-          "id": {
+          "userId": {
             "type": "integer",
             "format": "int32"
           },

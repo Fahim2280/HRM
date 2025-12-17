@@ -8,8 +8,10 @@ namespace HRM.Application.Auth.Commands.LoginCommand
         public string Identifier { get; set; } = string.Empty; // Can be username or email
         public string Password { get; set; } = string.Empty;
 
-        public LoginCommand()
+        public LoginCommand(LoginDto loginDto )
         {
+            Identifier = loginDto.Identifier;
+            Password = loginDto.Password;
         }
     }
 }

@@ -19,12 +19,8 @@ namespace HRM.API.Controllers
         [HttpPost]
         public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var command = new LoginCommand
-            {
-                Identifier = loginDto.Identifier,
-                Password = loginDto.Password
-            };
-
+            var command = new LoginCommand(loginDto);
+            
             var result = await _mediator.Send(command);
 
             if (result.IsSuccess)

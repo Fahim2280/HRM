@@ -48,71 +48,75 @@ namespace HRM.API.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<UserDto>> CreateUser([FromBody] CreateUserDto createUserDto)
         {
+
             var command = new CreateUserCommand
             {
                 Username = createUserDto.Username,
                 Email = createUserDto.Email,
                 Country = createUserDto.Country,
-                PhoneNumber = createUserDto.PhoneNumber,            
+                PhoneNumber = createUserDto.PhoneNumber,
                 Password = createUserDto.Password,
+                ConfirmPassword = createUserDto.ConfirmPassword,
                 Role = createUserDto.Role,
                 IsActive = createUserDto.IsActive
             };
-
+         
             var result = await _mediator.Send(command);
-            
-            if (result.IsSuccess)
+            try
             {
-                return CreatedAtAction(nameof(GetUserById), new { id = result.User.Id }, result.User);
-            }
-            else
-            {
-                if (result.StatusCode == 409)
+                if (result.IsSuccess && result.User != null)
                 {
-                    return Conflict(new { Message = result.ErrorMessage });
+                    return CreatedAtAction(nameof(GetUserById), new { id = result.User.UserId }, result.User);
                 }
-                return BadRequest(new { Message = result.ErrorMessage });
+                else
+                {
+                    return BadRequest(result.ErrorMessage ?? "User creation failed.");
+                }
             }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+           
         }
 
         [HttpPut("{id}")]
         public async Task<ActionResult<UserDto>> UpdateUser(int id, [FromBody] UpdateUserDto updateUserDto)
         {
+
             if (id != updateUserDto.Id)
             {
                 return BadRequest("User ID mismatch");
             }
-
-            var command = new UpdateUserCommand
+            // Check if the model is valid
+            if (!ModelState.IsValid)
             {
-                Id = updateUserDto.Id,
-                Username = updateUserDto.Username,
-                Email = updateUserDto.Email,
-                Country = updateUserDto.Country,
-                PhoneNumber = updateUserDto.PhoneNumber,
-                Password = updateUserDto.Password,
-                Role = updateUserDto.Role,
-                IsActive = updateUserDto.IsActive
-            };
-
-            var result = await _mediator.Send(command);
-            
-            if (result.IsSuccess)
-            {
-                return Ok(result.User);
+                return BadRequest(ModelState);
             }
-            else
+            try
             {
-                if (result.StatusCode == 404)
+                var command = new UpdateUserCommand
                 {
-                    return NotFound(new { Message = result.ErrorMessage });
-                }
-                else if (result.StatusCode == 409)
-                {
-                    return Conflict(new { Message = result.ErrorMessage });
-                }
-                return BadRequest(new { Message = result.ErrorMessage });
+                    Id = updateUserDto.Id,
+                    Username = updateUserDto.Username,
+                    Email = updateUserDto.Email,
+                    Country = updateUserDto.Country,
+                    PhoneNumber = updateUserDto.PhoneNumber,
+                    Password = updateUserDto.Password,
+                    Role = updateUserDto.Role,
+                    IsActive = updateUserDto.IsActive
+                };
+                var result = await _mediator.Send(command);
+                return Ok(result);
             }
+            catch (ArgumentException ex) when (ex.Message.Contains("not found"))
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex) 
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }                      
         }
 
 
