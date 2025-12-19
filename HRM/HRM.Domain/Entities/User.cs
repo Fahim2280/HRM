@@ -14,6 +14,9 @@ namespace HRM.Domain.Entities
         public string PasswordHash { get; set; } = string.Empty;
         public string Role { get; set; } = string.Empty;
         public bool IsActive { get; set; } = true;
+        public bool IsEmailVerified { get; set; } = false;
+        public string EmailVerificationToken { get; set; } = string.Empty;
+        public DateTime? EmailVerificationTokenExpiry { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
         public DateTime? ModifiedDate { get; set; }
     }

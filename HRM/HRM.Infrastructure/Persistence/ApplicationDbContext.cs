@@ -28,7 +28,11 @@ namespace HRM.Infrastructure.Persistence
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Username).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.PasswordHash).IsRequired().HasMaxLength(200);
-                entity.HasIndex(e => e.Username).IsUnique();
+                entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.EmailVerificationToken).HasMaxLength(200);
+                entity.Property(e => e.IsEmailVerified).HasDefaultValue(false);
+                entity.HasIndex(e => e.Username).IsUnique();          
+                entity.HasIndex(e => e.Email).IsUnique();
             });
 
             // Department configuration
@@ -49,7 +53,6 @@ namespace HRM.Infrastructure.Persistence
                 entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.PhoneNumber).HasMaxLength(20);
                 entity.Property(e => e.Salary).HasColumnType("decimal(18,2)");
-
                 entity.HasIndex(e => e.Email).IsUnique();
 
                 // Foreign key relationship

@@ -30,6 +30,11 @@ namespace HRM.Infrastructure.Repositories
             return await _dbSet.FirstOrDefaultAsync(u => u.Email == email);
         }
 
+        public async Task<User?> GetUserByVerificationTokenAsync(string token)
+        {
+            return await _dbSet.FirstOrDefaultAsync(u => u.EmailVerificationToken == token && u.EmailVerificationTokenExpiry > DateTime.UtcNow);
+        }
+
         public async Task<User> AddAsync(User user)
         {
             await _dbSet.AddAsync(user);

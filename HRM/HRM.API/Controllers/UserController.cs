@@ -1,6 +1,7 @@
 ﻿using HRM.Application.User.Commands.CreateUser;
 using HRM.Application.User.Commands.DeleteUser;
 using HRM.Application.User.Commands.UpdateUser;
+using HRM.Application.User.Commands.VerifyEmail;
 using HRM.Application.User.DTOs;
 using HRM.Application.User.Queries.GetAllUsers;
 using HRM.Application.User.Queries.GetUserById;
@@ -137,6 +138,23 @@ namespace HRM.API.Controllers
                     return NotFound(new { Message = result.ErrorMessage });
                 }
                 return BadRequest(new { Message = result.ErrorMessage });
+            }
+        }
+
+        [HttpGet("verify-email")]
+        [AllowAnonymous]
+        public async Task<ActionResult> VerifyEmail([FromQuery] string token)
+        {
+            var command = new VerifyEmailCommand { Token = token };
+            var result = await _mediator.Send(command);
+
+            if (result)
+            {
+                return Ok(new { Message = "Email verified successfully. You can now login." });
+            }
+            else
+            {
+                return BadRequest(new { Message = "Invalid or expired verification token." });
             }
         }
     }

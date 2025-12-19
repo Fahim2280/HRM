@@ -9,6 +9,7 @@ namespace HRM.Domain.Interfaces
     {
         Task<User?> GetUserByUsernameAsync(string username);
         Task<User?> GetUserByEmailAsync(string email);
+        Task<User?> GetUserByVerificationTokenAsync(string token);
         Task<User> AddAsync(User user);
         Task<User?> GetByIdAsync(int id);
         Task<IEnumerable<User>> GetAllAsync();

@@ -22,6 +22,7 @@ namespace HRM.Infrastructure.Extensions
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IEmailRepository, EmailRepository>();
         }
     }
 }

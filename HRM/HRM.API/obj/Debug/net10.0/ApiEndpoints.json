@@ -371,5 +371,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "HRM.API.Controllers.UserController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/User/verify-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

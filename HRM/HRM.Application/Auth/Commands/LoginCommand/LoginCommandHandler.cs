@@ -36,10 +36,19 @@ namespace HRM.Application.Auth.Commands.LoginCommand
                 return LoginResult.Failure("Invalid identifier or password.");
             }
 
+            // Check if email is verified
+            if (!user.IsEmailVerified)
+            {
+                return LoginResult.Failure("You should verify/confirm the email.");
+            }
+
             // Generate JWT token
             var token = _authService.GenerateJwtToken(user);
+            
+            // Set expiration time to 1 hour from now
+            var expirationTime = DateTime.UtcNow.AddHours(1);
 
-            return LoginResult.Success(token, user.Username, user.Role, DateTime.UtcNow.AddHours(1));
+            return LoginResult.Success(token, user.Username, user.Role, expirationTime);
         }
 
         private async Task<HRM.Domain.Entities.User?> GetUserByIdentifierAsync(string identifier)
