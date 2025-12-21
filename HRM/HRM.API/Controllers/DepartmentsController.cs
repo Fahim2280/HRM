@@ -57,7 +57,7 @@ namespace HRM.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<DepartmentDto>> CreateDepartment([FromBody] DepartmentDto departmentDto)
+        public async Task<ActionResult<DepartmentDto>> CreateDepartment([FromBody] CreatedDepartmentDto createdDepartmentDto)
         {
             // Check if the model is valid
             if (!ModelState.IsValid)
@@ -67,7 +67,7 @@ namespace HRM.API.Controllers
 
             try
             {
-                var command = new CreateDepartmentCommand(departmentDto.Name, departmentDto.Description);
+                var command = new CreateDepartmentCommand(createdDepartmentDto);
                 var department = await _mediator.Send(command);
                 return CreatedAtAction(nameof(GetDepartment), new { id = department.Id }, department);
             }
@@ -78,7 +78,7 @@ namespace HRM.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateDepartment(int id, [FromBody] DepartmentDto departmentDto)
+        public async Task<IActionResult> UpdateDepartment(int id, [FromBody] UpdateDepartmentDto updateDepartmentDto)
         {
             // Check if the model is valid
             if (!ModelState.IsValid)
@@ -88,7 +88,7 @@ namespace HRM.API.Controllers
 
             try
             {
-                var command = new UpdateDepartmentCommand(id, departmentDto.Name, departmentDto.Description, departmentDto.IsActive);
+                var command = new UpdateDepartmentCommand(id, updateDepartmentDto);
                 var department = await _mediator.Send(command);
                 return Ok(department);
             }
@@ -110,11 +110,19 @@ namespace HRM.API.Controllers
             {
                 var command = new DeleteDepartmentCommand(id);
                 var result = await _mediator.Send(command);
-                if (!result)
+
+                if (result.IsSuccess)
                 {
-                    return NotFound($"Department with ID {id} not found.");
+                    return Ok(true);
                 }
-                return NoContent();
+                else
+                {
+                    if (result.StatusCode == 404)
+                    {
+                        return NotFound(new { Message = result.ErrorMessage });
+                    }
+                    return BadRequest(new { Message = result.ErrorMessage });
+                }
             }
             catch (Exception ex)
             {

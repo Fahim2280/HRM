@@ -1,7 +1,7 @@
-﻿using HRM.Domain.Interfaces;
+﻿using HRM.Application.Auth.Services;
+using HRM.Domain.Interfaces;
 using HRM.Infrastructure.Persistence;
 using HRM.Infrastructure.Repositories;
-using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

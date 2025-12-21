@@ -13,5 +13,17 @@ namespace HRM.Application.User.Commands.UpdateUser
         public string? Password { get; set; }
         public string Role { get; set; } = string.Empty;
         public bool IsActive { get; set; }
+
+        public UpdateUserCommand(int id, UpdateUserDto updateUserDto)
+        {
+            Id = id;
+            Username = updateUserDto.Username;
+            Email = updateUserDto.Email;
+            Country = updateUserDto.Country;
+            PhoneNumber = updateUserDto.PhoneNumber;
+            Password = updateUserDto.Password;
+            Role = updateUserDto.Role;
+            IsActive = updateUserDto.IsActive;
+        }
     }
 }

@@ -23,23 +23,10 @@ namespace HRM.Application.Department.Queries.GetAllDepartments
         public async Task<IEnumerable<DepartmentDto>> Handle(GetAllDepartmentsQuery request, CancellationToken cancellationToken)
         {
             var departments = await _departmentRepository.GetAllAsync();
-            var departmentDtos = new List<DepartmentDto>();
-            //var departmeentDtos = mapper.Map<IEnumerable<DepartmentDto>>(departments);
+           
+            var departmeentDtos = _mapper.Map<IEnumerable<DepartmentDto>>(departments);
 
-            foreach (var department in departments)
-            {
-                departmentDtos.Add(new DepartmentDto
-                {
-                    Id = department.Id ?? 0,
-                    Name = department.Name,
-                    Description = department.Description,
-                    IsActive = department.IsActive,
-                    CreatedDate = department.CreatedDate,
-                    ModifiedDate = department.ModifiedDate
-                });
-            }
-
-            return departmentDtos;
+            return departmeentDtos;
         }
     }
 }

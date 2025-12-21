@@ -8,8 +8,6 @@ namespace HRM.Application.Employee.DTOs
     public class CreateEmployeeDto
     {
 
-        public int EmployeeId { get; set; }
-
         [Required(ErrorMessage = "First name is required")]
         [StringLength(50, ErrorMessage = "First name must be between 1 and 50 characters", MinimumLength = 1)]
         public string FirstName { get; set; } = string.Empty;

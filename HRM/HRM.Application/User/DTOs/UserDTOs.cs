@@ -7,7 +7,7 @@ namespace HRM.Application.User.DTOs
 {
     public class UserDto
     {
-        public int UserId { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Username is required")]
         [StringLength(50, ErrorMessage = "Username must be between 1 and 50 characters", MinimumLength = 1)]
@@ -17,8 +17,12 @@ namespace HRM.Application.User.DTOs
         [EmailAddress(ErrorMessage = "Invalid email format")]
         public string Email { get; set; } = string.Empty;
 
+        [Required(ErrorMessage = "First name is required")]
+        [StringLength(100, ErrorMessage = "Country must be between 2 and 100 characters", MinimumLength = 0)]
         public string Country { get; set; } = string.Empty;
 
+        [Required(ErrorMessage = "Phone number is required")]
+        [Phone(ErrorMessage = "Invalid phone number format")]
         public string PhoneNumber { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Password is required")]

@@ -7,7 +7,6 @@ namespace HRM.Application.User.DTOs
 {
     public class UpdateUserDto
     {
-        public int Id { get; set; }
 
         [Required(ErrorMessage = "Username is required")]
         [StringLength(50, ErrorMessage = "Username must be between 1 and 50 characters", MinimumLength = 1)]

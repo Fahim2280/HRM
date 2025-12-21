@@ -1,20 +1,20 @@
-using HRM.Application.Auth.DTOs;
-using HRM.Application.Auth.Services;
 using HRM.Domain.Interfaces;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using BCrypt.Net;
+using UserEntity = HRM.Domain.Entities.User;
+using HRM.Application.Common;
 
 namespace HRM.Application.Auth.Commands.LoginCommand
 {
     public class LoginCommandHandler : IRequestHandler<LoginCommand, LoginResult>
     {
         private readonly IUserRepository _userRepository;
-        private readonly IAuthService _authService;
+        private readonly IAuthRepository _authService;
 
-        public LoginCommandHandler(IUserRepository userRepository, IAuthService authService)
+        public LoginCommandHandler(IUserRepository userRepository, IAuthRepository authService)
         {
             _userRepository = userRepository;
             _authService = authService;
@@ -51,7 +51,7 @@ namespace HRM.Application.Auth.Commands.LoginCommand
             return LoginResult.Success(token, user.Username, user.Role, expirationTime);
         }
 
-        private async Task<HRM.Domain.Entities.User?> GetUserByIdentifierAsync(string identifier)
+        private async Task<UserEntity?> GetUserByIdentifierAsync(string identifier)
         {
             // Check if identifier is an email
             if (identifier.Contains("@"))

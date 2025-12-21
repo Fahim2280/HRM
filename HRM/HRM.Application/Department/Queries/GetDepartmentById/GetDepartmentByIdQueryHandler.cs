@@ -27,15 +27,9 @@ namespace HRM.Application.Department.Queries.GetDepartmentById
                 return null;
             }
 
-            return new DepartmentDto
-            {
-                Id = department.Id ?? 0,
-                Name = department.Name,
-                Description = department.Description,
-                IsActive = department.IsActive,
-                CreatedDate = department.CreatedDate,
-                ModifiedDate = department.ModifiedDate
-            };
+            var departmentDtos = _mapper.Map<DepartmentDto>(department);
+
+            return departmentDtos;
         }
     }
 }

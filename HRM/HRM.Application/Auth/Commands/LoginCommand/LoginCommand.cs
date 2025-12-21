@@ -1,4 +1,5 @@
 using HRM.Application.Auth.DTOs;
+using HRM.Application.Common;
 using MediatR;
 
 namespace HRM.Application.Auth.Commands.LoginCommand

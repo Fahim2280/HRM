@@ -1,6 +1,6 @@
 using System;
 
-namespace HRM.Application.Auth.DTOs
+namespace HRM.Application.Common
 {
 
     public class LoginResult

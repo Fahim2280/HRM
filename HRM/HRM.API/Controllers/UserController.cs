@@ -51,24 +51,14 @@ namespace HRM.API.Controllers
         public async Task<ActionResult<UserDto>> CreateUser([FromBody] CreateUserDto createUserDto)
         {
 
-            var command = new CreateUserCommand
-            {
-                Username = createUserDto.Username,
-                Email = createUserDto.Email,
-                Country = createUserDto.Country,
-                PhoneNumber = createUserDto.PhoneNumber,
-                Password = createUserDto.Password,
-                ConfirmPassword = createUserDto.ConfirmPassword,
-                Role = createUserDto.Role,
-                IsActive = createUserDto.IsActive
-            };
+            var command = new CreateUserCommand(createUserDto);
          
             var result = await _mediator.Send(command);
             try
             {
                 if (result.IsSuccess && result.User != null)
                 {
-                    return CreatedAtAction(nameof(GetUserById), new { id = result.User.UserId }, result.User);
+                    return CreatedAtAction(nameof(GetUserById), new { id = result.User.Id }, result.User);
                 }
                 else
                 {
@@ -85,29 +75,15 @@ namespace HRM.API.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<UserDto>> UpdateUser(int id, [FromBody] UpdateUserDto updateUserDto)
         {
-
-            if (id != updateUserDto.Id)
-            {
-                return BadRequest("User ID mismatch");
-            }
-            // Check if the model is valid
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            // Check if the model is valid         
             try
             {
-                var command = new UpdateUserCommand
+                if (!ModelState.IsValid)
                 {
-                    Id = updateUserDto.Id,
-                    Username = updateUserDto.Username,
-                    Email = updateUserDto.Email,
-                    Country = updateUserDto.Country,
-                    PhoneNumber = updateUserDto.PhoneNumber,
-                    Password = updateUserDto.Password,
-                    Role = updateUserDto.Role,
-                    IsActive = updateUserDto.IsActive
-                };
+                    return BadRequest(ModelState);
+                }
+
+                var command = new UpdateUserCommand(id,updateUserDto);             
                 var result = await _mediator.Send(command);
                 return Ok(result);
             }
@@ -125,38 +101,55 @@ namespace HRM.API.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<bool>> DeleteUser(int id)
         {
-            var command = new DeleteUserCommand(id);
-            var result = await _mediator.Send(command);
-            
-            if (result.IsSuccess)
+            try
             {
-                return Ok(true);
-            }
-            else
-            {
-                if (result.StatusCode == 404)
+                var command = new DeleteUserCommand(id);
+                var result = await _mediator.Send(command);
+
+                if (result.IsSuccess)
                 {
-                    return NotFound(new { Message = result.ErrorMessage });
+                    return Ok(true);
                 }
-                return BadRequest(new { Message = result.ErrorMessage });
+                else
+                {
+                    if (result.StatusCode == 404)
+                    {
+                        return NotFound(new { Message = result.ErrorMessage });
+                    }
+                    return BadRequest(new { Message = result.ErrorMessage });
+                }
+
             }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+            
         }
 
         [HttpGet("verify-email")]
         [AllowAnonymous]
         public async Task<ActionResult> VerifyEmail([FromQuery] string token)
         {
-            var command = new VerifyEmailCommand { Token = token };
-            var result = await _mediator.Send(command);
+            try
+            {
+                var command = new VerifyEmailCommand { Token = token };
+                var result = await _mediator.Send(command);
 
-            if (result)
-            {
-                return Ok(new { Message = "Email verified successfully. You can now login." });
+                if (result)
+                {
+                    return Ok(new { Message = "Email verified successfully. You can now login." });
+                }
+                else
+                {
+                    return BadRequest(new { Message = "Invalid or expired verification token." });
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest(new { Message = "Invalid or expired verification token." });
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
+           
         }
     }
 }

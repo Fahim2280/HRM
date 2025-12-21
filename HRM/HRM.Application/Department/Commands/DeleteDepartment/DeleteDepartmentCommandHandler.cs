@@ -1,4 +1,5 @@
-﻿using HRM.Domain.Entities;
+﻿using HRM.Application.Common;
+using HRM.Domain.Entities;
 using HRM.Domain.Interfaces;
 using MediatR;
 using System.Threading;
@@ -7,7 +8,7 @@ using DepartmentEntity = HRM.Domain.Entities.Department;
 
 namespace HRM.Application.Department.Commands.DeleteDepartment
 {
-    public class DeleteDepartmentCommandHandler : IRequestHandler<DeleteDepartmentCommand, bool>
+    public class DeleteDepartmentCommandHandler : IRequestHandler<DeleteDepartmentCommand, DeleteResult>
     {
         private readonly IDepartmentRepository _departmentRepository;
 
@@ -16,15 +17,16 @@ namespace HRM.Application.Department.Commands.DeleteDepartment
             _departmentRepository = departmentRepository;
         }
 
-        public async Task<bool> Handle(DeleteDepartmentCommand request, CancellationToken cancellationToken)
+        public async Task<DeleteResult> Handle(DeleteDepartmentCommand request, CancellationToken cancellationToken)
         {
             var department = await _departmentRepository.GetByIdAsync(request.Id);
             if (department == null)
             {
-                return false;
+                return DeleteResult.Failure($"User with ID {request.Id} not found.", 404);
             }
 
-            return await _departmentRepository.DeleteAsync(department);
+            var result = await _departmentRepository.DeleteAsync(department);
+            return DeleteResult.Success();
         }
     }
 }

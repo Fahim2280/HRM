@@ -13,5 +13,17 @@ namespace HRM.Application.User.Commands.CreateUser
         public string ConfirmPassword { get; set; } = string.Empty;
         public string Role { get; set; } = string.Empty;
         public bool IsActive { get; set; } = true;
-    }
+
+        public CreateUserCommand(CreateUserDto userDto)
+        {
+            Username = userDto.Username;
+            Email = userDto.Email;
+            Country = userDto.Country;
+            PhoneNumber = userDto.PhoneNumber;
+            Password = userDto.Password;
+            ConfirmPassword = userDto.ConfirmPassword;
+            Role = userDto.Role;
+            IsActive = userDto.IsActive;
+        }
+    }    
 }

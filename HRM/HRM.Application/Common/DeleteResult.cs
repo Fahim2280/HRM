@@ -1,4 +1,4 @@
-namespace HRM.Application.User.DTOs
+namespace HRM.Application.Common
 {
     public class DeleteResult
     {

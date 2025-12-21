@@ -28,12 +28,7 @@ namespace HRM.Application.Department.Commands.UpdateDepartment
                 throw new ArgumentException($"Department with ID {request.Id} not found.");
             }
 
-            // Update properties
-            existingDepartment.Name = request.Name;
-            existingDepartment.Description = request.Description;
-            existingDepartment.IsActive = request.IsActive;
-            existingDepartment.ModifiedDate = DateTime.UtcNow;
-
+            _mapper.Map(request, existingDepartment);
             var updatedDepartment = await _departmentRepository.UpdateAsync(existingDepartment);
             var departmentDto = _mapper.Map<DepartmentDto>(updatedDepartment);
 

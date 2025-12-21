@@ -5,7 +5,6 @@ namespace HRM.Application.Employee.Commands.CreateEmployee
 {
     public class CreateEmployeeCommand : IRequest<EmployeeDto>
     {
-        public int Id { get; set; }
         public string FirstName { get; set; } = string.Empty;
 
         public string LastName { get; set; } = string.Empty;
@@ -26,7 +25,6 @@ namespace HRM.Application.Employee.Commands.CreateEmployee
 
         public CreateEmployeeCommand(CreateEmployeeDto employeeDto)
         {
-            Id = employeeDto.EmployeeId;
             FirstName = employeeDto.FirstName;
             LastName = employeeDto.LastName;
             Email = employeeDto.Email;

@@ -114,11 +114,18 @@ namespace HRM.API.Controllers
             {
                 var command = new DeleteEmployeeCommand(id);
                 var result = await _mediator.Send(command);
-                if (!result)
+                if (result.IsSuccess)
                 {
-                    return NotFound($"Employee with ID {id} not found.");
+                    return Ok(true);
                 }
-                return NoContent();
+                else
+                {
+                    if (result.StatusCode == 404)
+                    {
+                        return NotFound(new { Message = result.ErrorMessage });
+                    }
+                    return BadRequest(new { Message = result.ErrorMessage });
+                }
             }
             catch (Exception ex)
             {

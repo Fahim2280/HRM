@@ -1,8 +1,10 @@
-﻿using MediatR;
+﻿using HRM.Application.Common;
+using HRM.Application.User.DTOs;
+using MediatR;
 
 namespace HRM.Application.Department.Commands.DeleteDepartment
 {
-    public class DeleteDepartmentCommand : IRequest<bool>
+    public class DeleteDepartmentCommand : IRequest<DeleteResult>
     {
         public int Id { get; set; }
 

@@ -1,4 +1,4 @@
-using HRM.Application.User.DTOs;
+using HRM.Application.Common;
 using HRM.Domain.Entities;
 using HRM.Domain.Interfaces;
 using MediatR;

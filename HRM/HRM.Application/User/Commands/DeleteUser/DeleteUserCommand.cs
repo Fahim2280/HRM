@@ -1,4 +1,4 @@
-using HRM.Application.User.DTOs;
+using HRM.Application.Common;
 using MediatR;
 
 namespace HRM.Application.User.Commands.DeleteUser

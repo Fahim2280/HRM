@@ -28,8 +28,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "departmentDto",
-        "Type": "HRM.Application.Department.DTOs.DepartmentDto",
+        "Name": "createdDepartmentDto",
+        "Type": "HRM.Application.Department.DTOs.CreatedDepartmentDto",
         "IsRequired": true
       }
     ],
@@ -85,8 +85,8 @@
         "IsRequired": true
       },
       {
-        "Name": "departmentDto",
-        "Type": "HRM.Application.Department.DTOs.DepartmentDto",
+        "Name": "updateDepartmentDto",
+        "Type": "HRM.Application.Department.DTOs.UpdateDepartmentDto",
         "IsRequired": true
       }
     ],

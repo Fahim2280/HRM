@@ -9,10 +9,11 @@ namespace HRM.Application.Department.Commands.CreateDepartment
         public string? Description { get; set; }
         public bool IsActive { get; set; } = true;
 
-        public CreateDepartmentCommand(string name, string? description)
+        public CreateDepartmentCommand(CreatedDepartmentDto departmentDto)
         {
-            Name = name;
-            Description = description;
+            Name = departmentDto.Name;
+            Description = departmentDto.Description;
+            IsActive = departmentDto.IsActive;
         }
     }
 }

@@ -1,3 +1,4 @@
+using AutoMapper;
 using HRM.Application.Employee.DTOs;
 using HRM.Domain.Interfaces;
 using MediatR;
@@ -10,35 +11,24 @@ namespace HRM.Application.Employee.Queries.GetEmployeeById
     public class GetEmployeeByIdQueryHandler : IRequestHandler<GetEmployeeByIdQuery, EmployeeDto?>
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IMapper _mapper;
 
-        public GetEmployeeByIdQueryHandler(IEmployeeRepository employeeRepository)
+        public GetEmployeeByIdQueryHandler(IEmployeeRepository employeeRepository, IMapper mapper)
         {
             _employeeRepository = employeeRepository;
+            _mapper = mapper;
         }
 
         public async Task<EmployeeDto?> Handle(GetEmployeeByIdQuery request, CancellationToken cancellationToken)
         {
             var employee = await _employeeRepository.GetByIdAsync(request.Id);
+
             if (employee == null)
             {
                 return null;
             }
 
-            return new EmployeeDto
-            {
-                Id = employee.Id ?? 0,
-                FirstName = employee.FirstName,
-                LastName = employee.LastName,
-                Email = employee.Email,
-                PhoneNumber = employee.PhoneNumber,
-                DateOfBirth = employee.DateOfBirth,
-                HireDate = employee.HireDate,
-                Salary = employee.Salary,
-                IsActive = employee.IsActive,
-                DepartmentId = employee.DepartmentId,
-                CreatedDate = employee.CreatedDate,
-                ModifiedDate = employee.ModifiedDate
-            };
+            return _mapper.Map<EmployeeDto>(employee);
         }
     }
 }

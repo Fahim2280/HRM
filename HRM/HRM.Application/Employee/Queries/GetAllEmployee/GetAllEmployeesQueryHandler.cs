@@ -1,3 +1,4 @@
+using AutoMapper;
 using HRM.Application.Employee.DTOs;
 using HRM.Domain.Interfaces;
 using MediatR;
@@ -11,37 +12,18 @@ namespace HRM.Application.Employee.Queries.GetAllEmployee
     public class GetAllEmployeesQueryHandler : IRequestHandler<GetAllEmployeesQuery, IEnumerable<EmployeeDto>>
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IMapper _mapper;
 
-        public GetAllEmployeesQueryHandler(IEmployeeRepository employeeRepository)
+        public GetAllEmployeesQueryHandler(IEmployeeRepository employeeRepository, IMapper mapper)
         {
             _employeeRepository = employeeRepository;
+            _mapper = mapper;
         }
 
         public async Task<IEnumerable<EmployeeDto>> Handle(GetAllEmployeesQuery request, CancellationToken cancellationToken)
         {
             var employees = await _employeeRepository.GetAllAsync();
-            var employeeDtos = new List<EmployeeDto>();
-
-            foreach (var employee in employees)
-            {
-                employeeDtos.Add(new EmployeeDto
-                {
-                    Id = employee.Id ?? 0,
-                    FirstName = employee.FirstName,
-                    LastName = employee.LastName,
-                    Email = employee.Email,
-                    PhoneNumber = employee.PhoneNumber,
-                    DateOfBirth = employee.DateOfBirth,
-                    HireDate = employee.HireDate,
-                    Salary = employee.Salary,
-                    IsActive = employee.IsActive,
-                    DepartmentId = employee.DepartmentId,
-                    CreatedDate = employee.CreatedDate,
-                    ModifiedDate = employee.ModifiedDate
-                });
-            }
-
-            return employeeDtos;
+            return _mapper.Map<IEnumerable<EmployeeDto>>(employees);
         }
     }
 }

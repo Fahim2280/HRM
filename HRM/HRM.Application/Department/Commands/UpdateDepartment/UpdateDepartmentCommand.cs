@@ -10,12 +10,12 @@ namespace HRM.Application.Department.Commands.UpdateDepartment
         public string? Description { get; set; }
         public bool IsActive { get; set; }
 
-        public UpdateDepartmentCommand(int id, string name, string? description, bool isActive)
+        public UpdateDepartmentCommand(int id, UpdateDepartmentDto departmentDto)
         {
             Id = id;
-            Name = name;
-            Description = description;
-            IsActive = isActive;
+            Name = departmentDto.Name;
+            Description = departmentDto.Description;
+            IsActive = departmentDto.IsActive;
         }
     }
 }

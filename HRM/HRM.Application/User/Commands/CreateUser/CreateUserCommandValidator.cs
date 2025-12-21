@@ -28,6 +28,14 @@ namespace HRM.Application.User.Commands.CreateUser
             RuleFor(x => x.ConfirmPassword)
                 .Equal(x => x.Password).WithMessage("Password and Confirm Password must match");
 
+            RuleFor(x => x.Country)
+                .NotEmpty().WithMessage("Country is required")
+                .MaximumLength(50).WithMessage("Country must not exceed 50 characters");
+
+            RuleFor(x => x.PhoneNumber)
+                .NotEmpty().WithMessage("Phone number is required")
+                .MaximumLength(20).WithMessage("Phone number must not exceed 20 characters");
+
             RuleFor(x => x.Role)
                 .Must(role => validCategories.Contains(role))
                 .NotEmpty().WithMessage("Role is required")
